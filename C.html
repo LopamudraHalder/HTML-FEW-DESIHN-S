@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Login</title>
+</head>
+<style>
+.left,.right {
+      height:70%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top:50;
+      overflow-x: hidden;
+      padding-top: 50px;
+	  
+   }
+   .left {
+	text-align: center;
+      left:0;
+      background-color: #BFEFFF;
+   }
+   .right {
+	text-align: center;
+      right:0;
+      background-color: #BCD2EE;
+   }
+   
+   </style>
+<body bgcolor="#BFEFFF">
+
+<table bgcolor="000033" cellspacing="10%" width="100%" cellpadding="-50%">
+<tr><td><h1><u><i><font color="white">Login Site<p></i></u></h1><p></td>
+<td><font color="white" align="right"><b>Management</td>
+</tr>
+</table>
+<hr style="height:2px;border-width:7;color:blue;background-color:blue">
+
+<marquee bgcolor="#120885" height="35"><align="center">
+<font size="4" color="black"><b>Login
+  </b></font>
+ </align></marquee>
+ 
+	<div class="left">
+        <h1><u>Student Login</u></h1>
+        <br>
+       <form action="/login-admin" method="post" modelAttribute="admin">
+			<table align="center">
+				<tr>
+					<td>Id:</td>
+					<td><input type="number" name="id" /></td>
+				</tr>
+			
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				<br>
+				<tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+            </table>
+        </form>
+		<br>
+        <a href="/new_add"> Signup</a>
+		<br><br>
+		
+		<p><font color="red"><u><b> </u></font></p>
+		<br><p>  <u></u> 
+		 <u></u></p></br>
+		</div>
+		
+
+    <div class="right">
+        <h1><u>Facultry Login</u></h1>
+        <br>
+       <form action="/login-user" method="post" modelAttribute="admin">
+			<table align="center">
+				<tr>
+					<td>Id:</td>
+					<td><input type="number" name="id" /></td>
+				</tr>
+			
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="password" /></td>
+				</tr>
+				
+				<tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+				
+				
+            </table>
+			<br><br>
+			<p> 
+				<p>
+        </form>
+        
+    </div>
+
+</body>
+</html>
